@@ -1,0 +1,24 @@
+allow-hotplug eth1
+iface eth1 inet static
+   address 10.10.10.81
+   netmask 255.255.255.0
+   gateway 10.10.10.1
+
+   dns-nameservers 127.0.0.1 ::1
+   dns-search pnehem.com
+
+iface eth1 inet static
+   address 50.252.182.188
+   netmask 255.255.255.248
+
+   address 50.252.182.186
+   netmask 255.255.255.248
+   gateway 50.252.182.190
+
+iface eth1 inet6 static
+   address 2603:301e:217:8000::10/64
+   gateway 2603:301e:217:8000:2cab:a4ff:fe38:9797
+
+iface eth1 inet6 static
+   address 2603:301e:217:8000::60/64
+
